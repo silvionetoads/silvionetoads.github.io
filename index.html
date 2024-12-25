@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <script src="https://raw.githubusercontent.com/silvionetoads/mcpm/refs/heads/main/relogio.js"></script>
+   
   </head>
   <body>
+    // Exibe uma mensagem "Olá Mundo" no console do navegador
+console.log("Olá Mundo");
+
+// Insere a mensagem "Olá Mundo" no elemento com id "mensagem"
+function exibirMensagem() {
+    const elemento = document.getElementById('mensagem');
+    if (elemento) {
+        elemento.textContent = "Olá Mundo";
+    } else {
+        console.error("Elemento com id 'mensagem' não encontrado no HTML.");
+    }
+}
+
+// Executa a função ao carregar o script
+exibirMensagem();
     <h3>Olá mundo em Java</h3>
     <div id="relogio"></div>
     
